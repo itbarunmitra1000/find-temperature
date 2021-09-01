@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Temperature Hot</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url(images/bg-image.jpg) no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+        #spinner{
+            display: none;
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-md-6 m-auto py-5">
+            <div class="input-group mb-3">
+                <input id="input-country" type="text" class="form-control"
+                    placeholder="Enter a location for Weather ...">
+                <div class="input-group-append">
+                    <button onclick="getLocation()" type="button" class="btn btn-danger">Search</button>
+                </div>
+            </div>
+        </div>
+        <div id = "error-message" class="d-none">
+            <p>Please write ......</p>
+        </div>
+        <div id="spinner" class="text-center">
+            <div class="spinner-border  text-light " role="status">
+              <span class="visually-hidden "></span>
+            </div>
+          </div>
+        <div id="weather-data" class="weather-status text-white text-center">
+        </div>
+        
+
+    </div>
+    <script src="js/temperature.js"></script>
+</body>
+
+</html>
